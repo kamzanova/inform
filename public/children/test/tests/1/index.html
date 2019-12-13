@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <script
+	  src="../../js/quiz.js"></script>
+	  <script
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.1/mousetrap.min.js"></script>
+	<title>Test1</title>
+</head>
+<body>
+	<div id="quiz">
+		<div id="quiz-header">
+		  <h1>Тест</h1>
+		  <p class="faded">«Бейне контент құру» бөлімі бойынша біліміңді тексер.</p>
+		</div>
+		<div id="quiz-start-screen">
+		  <p><a href="#" id="quiz-start-btn" class="quiz-button">Бастау</a></p>
+		</div>
+	  </div>
+</body>
+</html>
+
+<script>
+$('#quiz').quiz({
+  //resultsScreen: '#results-screen',
+  //counter: false,
+  //homeButton: '#custom-home',
+  counterFormat: ' %total сұрақтың %current',
+  questions: [
+    {
+      'q': 'Бейнемен жұмыс істеуге программаларды таңдау кезінде ең басты ескеретін жағдай:',
+      'options': [
+        'A)	дербес компьютердің жүйелік талаптары',
+        'B)	нарықтағы құны',
+		'C)	программа мүмкіндіктері',
+		'D)	қызметтік сапасы',
+		'E)	программа қасиеттері мен сипаттамалары'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Дұрыс! ',
+      'incorrectResponse': 'Қате!'
+    },
+    {
+      'q': 'Құрылатын бейнефильм нәтижесінде қандай болу керектігін сипаттайтын шығармашылық жұмыс:',
+      'options': [
+        'А)	бейнені түсіру',
+        'В)	монтаждау жоспарын құру',
+		'C)	бейнені өңдеу',
+		'D)	бейнеге мультимедиа қосу',
+		'E)	бейнені монтаждау'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    },
+    {
+      'q': 'Бейнежазбадағы жалпы жарық немесе қараңғылықты баптау үшін қолданылады:',
+      'options': [
+        'A)	температура',
+        'B)	қанықтық',
+		'C)	жарықтық',
+		'D)	контраст',
+		'E)	гамма'
+      ],
+      'correctIndex': 2,
+	  'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    },
+	{
+      'q': 'Бейне түсін жылырақ (қажетіне қарай суық) етуге мүмкіндік береді:',
+      'options': [
+	  'A) гамма',
+      'B) жарықтық',
+     ' C) қанықтық ',
+     ' D) контраст',
+     ' E) температура'
+      ],
+      'correctIndex': 4,
+      'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    },
+	{
+      'q': 'Түрлі сценарийлерге қатысты бейнеклиптерді өңдеу барысында дыбыстар, суреттер, әсерлер мен өтулер, мәтін қосу.',
+      'options': [
+	'  A) Бейнені түрлендіру',
+      'B) Монтаждау жоспарын құру',
+     ' C) Бейнені түсіру',
+     ' D) Бейнеге дыбыс қосу',
+     ' E) Бейнеге сурет қосу'
+
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    }
+  ]
+});
+</script>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<script
+	  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	  <script
+	  src="../../js/quiz.js"></script>
+	  <script
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.1/mousetrap.min.js"></script>
+	<title>Test1</title>
+</head>
+<body>
+	<div id="quiz">
+		<div id="quiz-header">
+		  <h1>Тест</h1>
+		  <p class="faded">«Веб-жобалау» бөлімі бойынша біліміңді тексер.</p>
+		</div>
+		<div id="quiz-start-screen">
+		  <p><a href="#" id="quiz-start-btn" class="quiz-button">Бастау</a></p>
+		</div>
+	  </div>
+</body>
+</html>
+
+<script>
+$('#quiz').quiz({
+  //resultsScreen: '#results-screen',
+  //counter: false,
+  //homeButton: '#custom-home',
+  counterFormat: ' %total сұрақтың %current',
+  questions: [
+    {
+      'q': 'Сайттың барлық бөлімдері, ішкі бөлімдері, сайттағы мәліметтер көрсетілген жеке бет:',
+      'options': [
+        'A)	сайт картасы',
+        'B)	сайт дизайны',
+	    	'C)	сайттың басты беті',
+	    	'D)	сайт конструкторы',
+	    	'E)	сайт адресі'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Дұрыс! ',
+      'incorrectResponse': 'Қате!'
+    },
+    {
+      'q': 'Cайтты насихаттаудың әдісі:',
+      'options': [
+        'А)	қызыл, жасыл, көк',
+        'В) ақ, сұр, қара',
+	    	'C)	ақ, қара, қызыл',
+	    	'D)	жасыл, көк, қара',
+	    	'E)	сұр, көк, ақ'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    },
+    {
+      'q': 'Толық ресурстары бар сайтты онлайн құруға мүмкіндік беретін жүйе:',
+      'options': [
+        'A)	сайттың картасы',
+        'B)	басты беті',
+	     	'C)	сайт конструкторы',
+	    	'D)	сайт адресі',
+	    	'E)	сайттың дизайны'
+      ],
+      'correctIndex': 2,
+	  'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    },
+	{
+      'q': 'Сайтты насихаттау бойынша жүргізілетін кешенді жұмыс:',
+      'options': [
+	    'A)	іздеу маркетингі',
+      'B) каталогтерге тіркеу',
+     ' C) SMM ',
+     ' D) E-MAIL маркетинг',
+     ' E) SEM'
+      ],
+      'correctIndex': 0,
+      'correctResponse': 'Дұрыс!',
+      'incorrectResponse': 'Қате!'
+    }
+  ]
+});
+</script>

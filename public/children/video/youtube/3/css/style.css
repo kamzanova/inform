@@ -1,0 +1,55 @@
+body{
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.lesson-overview {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 15px rgba(0,31,51,.19);
+    box-shadow: 0 0 15px rgba(0,31,51,.19);
+    border-radius: 15px;
+    padding: 25px;
+    margin: auto;
+    font-size: 26px;
+}
+
+.second {
+    text-align: center;
+    padding: 30px;
+}
+
+.csection-block__index{
+    display: block;
+    font-size: 1.4rem;
+    color: #a7b3b7;
+    margin-bottom: 5px;
+}
+
+.csection-block_info{
+    font: 1.6rem "Open Sans",sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+    
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 40px 20px 20px;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.csection-block__index{
+    display: block;
+}
+
+.csection-block{
+    border: 1px solid #edf1f4;
+    -webkit-box-shadow: 0 0 10px rgba(0,31,51,.19);
+    box-shadow: 0 0 10px rgba(0,31,51,.19);
+    transition: box-shadow .2s ease-in,-webkit-box-shadow .2s ease-in;
+    margin-bottom: 20px;
+}
